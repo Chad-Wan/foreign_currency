@@ -2,7 +2,7 @@ import datetime
 
 
 class wilder_MA():
-    # 调用方法：
+    # 调用方法：test
     # instance1 = wilder_MA(USD_JPY, 15) 15怀尔德均线；instance1.wiMA_30min 为30分钟15怀尔德均线
     # instance2 = wilder_MA(USD_JPY, 20) 15怀尔德均线；instance2.wiMA_1day 为天线的15怀尔德均线
     def __init__(self, investment: str, period: int):
