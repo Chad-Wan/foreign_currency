@@ -27,8 +27,6 @@ class wilder_MA():
         self.last_overwrite_time_1hour = now
         self.last_overwrite_time_1day = now
 
-
-
         # 从文件中读取上一周期的均线指标，存入*_old数据中
         history_index_path = "I:\\forex_database\\Wilder_MA_db" + str(period)
         f = open(history_index_path, 'r')
@@ -57,7 +55,6 @@ class wilder_MA():
         self.wiMA_1day = price / self.period + self.wiMA_1day_old * (self.period - 1) / self.period
 
         # print(self.wiMA_30min, self.wiMA_30min_old, price, self.period)
-
 
     def update_last_wiMA(self):
         # 判断是否已经进入下一周期，如果是的话更新*_old变量
